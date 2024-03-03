@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Қабылдау кестесі</title>
+ </head>
+ <body>
+ <h1> Қабылдау кестесі </h1>
+<h1> Абдикаимов Ерсултан Врач </h1>
+ <form>
+ <fieldset>
+ <legend >Жеке ақпарат </legend>
+<p><label>ИИН <input type="tel" name="phone"
+ required pattern="([0-9]{3})[0-9]{3} [0-9]{2}
+ [0-9]{2}" title="Форматы: XXX XXX XXX XXX ">
+ </label>
+<button type= "submit" >ІЗДЕУ</button></p>
+ <label>Аты <input type="text" name="name"
+ required></label><p>
+<label>Фамилия <input type="text" name="name"
+ required></label><p>
+ <p><label>Телефон <input type="tel" name="phone"
+ required pattern="([0-9]{3})[0-9]{3} [0-9]{2}
+ [0-9]{2}" title="Форматы: (XXX)XXX XX XX">
+ </label></p>
+ <p><label>Электрондық пошта адресі <input
+ type="email" name=" email" ></label></p>
+ <label>Туған күні <input type="date"
+ name="dob">
+ </label></p>
+ </fieldset>
+ <fieldset>
+ <legend>Қабылдауға жазу</legend>
+ <p><label for="reason">Қабылдауға жазылу себебі
+ қандай? <label>
+ <datalist id="reasons">
+ <select name="reason">
+ <option>Жоспарлы қаралу</option>
+ <option>Суық тию немесе тұмау белгіле-
+ рі</option>
+ <option>Қан талдауы</option>
+ <option>Ота жасатудан кейінгі
+ тексерілу</option>
+ <option>Басқа</option>
+ </select>
+ Егер "Басқа" нұсқасы таңдалған болса, өзіңіздің
+ жауабыңызды жазыңыз:
+ </datalist>
+ <input id="reason" name="reason"
+ list="reasons"></p>
+ <lаbеl>Ауырсыну деңгейі <input type="range"
+ name="pain" min="0" max="10" step=".5"
+ value="5"
+ title="0 ауырмайды, 10 – төздірмейтін
+ ауырсыну"></label></p>
+Cправка алу
+ <p><label>от <input
+ type="date" name="date" required
+ min="2020-03-15"
+ max="2025-03-14"></label> 
+<label>до <input
+ type="date" name="date" required
+ min="2020-03-15"
+ max="2025-03-14">
+ <p><label> Уақыты <input type="time" name="time"
+ required min="08:00" max="18:00"
+<br>
+ <p><button type= "submit" >Жөнелту</button>
+ </form>
+ </body>
+</html>
